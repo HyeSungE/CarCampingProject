@@ -39,4 +39,9 @@ public class MyPageController {
 	public String myPagaLikeReview() {
 		return "myPage/myPageLikeReview";
 	}
+	
+	@RequestMapping("/myPageTest.myPage")
+	public String myPageTest() {
+		return "myPage/myPageTest";
+	}
 }
