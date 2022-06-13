@@ -1,5 +1,8 @@
 Manifest-Version: 1.0
 <<<<<<< HEAD
+Built-By: i7C-43
+=======
+<<<<<<< HEAD
 Built-By: i7C-04
 =======
 <<<<<<< HEAD
@@ -15,7 +18,11 @@ Built-By: i7C-43
 Built-By: User
 >>>>>>> 93943a3ebd39397d2a5b3489c71636f890f675cd
 >>>>>>> fa0def8c19b3062faf70c8cbdec08417fbce2ac3
+<<<<<<< HEAD
 >>>>>>> 2124990f64b607c40179428c1e16f594779c4e0c
+=======
+>>>>>>> 725647032c6927fa33d46418a447dd39afb5b154
+>>>>>>> 586db65932fc3a216b68e823001e1be2c10699f2
 Build-Jdk: 1.8.0_321
 Created-By: Maven Integration for Eclipse
 
