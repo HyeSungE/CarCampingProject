@@ -2,6 +2,18 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="../top.jsp"%>
 
+<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+		crossorigin="anonymous"> 
+	
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<link rel="stylesheet"
+		href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+
 <div class="container-fluid themed-container">
 	<!-- Row Grid -->
 	<div class="row mb-3" style="margin-left: 10%; margin-top: 40px;">
@@ -15,15 +27,18 @@
 					페이지</span>
 			</a>
 			<hr>
-			<ul class="nav nav-pills flex-column mb-auto">
+			
 				<svg class="bi me-2" width="16" height="16">
 					<use xlink:href="#home"></use></svg>
-				<img src="images/1.jpg" class="card-img-top" alt="...">
+				<img src="resources/images/1.jpg" class="card-img-top" alt="...">
 				<br>
 				<h3>차박지 정보</h3>
 				<br> 화장실 유무:
-				<br>
-			</ul>
+				<br> 화장실 유무:
+				<br> 화장실 유무:
+				<br> 화장실 유무:
+				<br> 화장실 유무:
+		
 
 			<hr>
 		</div>
