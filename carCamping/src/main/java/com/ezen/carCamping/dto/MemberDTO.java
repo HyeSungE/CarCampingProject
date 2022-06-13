@@ -22,9 +22,13 @@ public class MemberDTO {
 	private String mem_summary;
 	private String mem_introduce;
 	private int mem_firstReview;
+<<<<<<< HEAD
 	
 	
 	public int getMem_num() {
+=======
+	public int mem_num() {
+>>>>>>> 82cc34bfec30eefd16f6bde43d3928823f7a1c42
 		return mem_num;
 	}
 	public void setMem_num(int mem_num) {
