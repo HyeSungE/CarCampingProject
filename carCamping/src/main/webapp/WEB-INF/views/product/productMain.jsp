@@ -60,8 +60,6 @@
 
 			</div>
 			<div class="swiper-container">
-				<c:if test="${ProductCategory.pc_num }">
-					<c:if test="${BrandCategory.brand_num }">
 						<c:forEach items="${ProductCategory.mainImage }" var="pdto">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -79,8 +77,6 @@
 							<div class="swiper-slide" style="font-size: 50pt;">- 끝 -</div>
 						</div>
 						</c:forEach>
-					</c:if>
-				</c:if>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-pagination"></div>
