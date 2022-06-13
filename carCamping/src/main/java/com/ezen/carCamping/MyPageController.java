@@ -42,7 +42,7 @@ public class MyPageController {
 	
 	@RequestMapping("/myPageTest.myPage")
 	public String myPageTest() {
-		System.out.println();
 		return "myPage/myPageTest";
 	}
+	
 }
