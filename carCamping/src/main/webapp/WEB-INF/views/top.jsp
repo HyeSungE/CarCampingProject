@@ -73,35 +73,43 @@
 									프로필
 								</a>
 							</li>
-							<div class="offcanvas offcanvas-start" tabindex="-1"
+								<div class="offcanvas offcanvas-start" tabindex="-1"
 								id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 								<div class="offcanvas-header">
-									<h5 class="offcanvas-title" id="offcanvasExampleLabel">내 메뉴</h5>
+									<h5 class="offcanvas-title" id="offcanvasExampleLabel"><b><font color="green">내 메뉴</b></font></h5>
 									<button type="button" class="btn-close text-reset"
 										data-bs-dismiss="offcanvas" aria-label="Close"></button>
 								</div>
 								<div class="offcanvas-body">
 									<div>
+                                      <img src="sik.jpg" class="card-img rounded-circle"
+						                style="width: 150px; height: 150px" />
 										닉네임/프로필사진
 									</div>
 									<div class="list-group">
 										<a href="mypage_profile.jsp"
-											class="list-group-item list-group-item-action"> 			
+											class="list-group-item list-group-item-action list-group-item-light p-3">		
+											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											내 정보 </a> 
 										<a href="#"
-											class="list-group-item list-group-item-action">
+											class="list-group-item list-group-item-action list-group-item-light p-3">
+											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											내가 쓴 리뷰</a> 
 										<a href="#"
-											class="list-group-item list-group-item-action">
+											class="list-group-item list-group-item-action list-group-item-light p-3">
+											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											내가 좋아한 리뷰</a> 
 										<a href="cart.jsp"
-											class="list-group-item list-group-item-action">
+											class="list-group-item list-group-item-action list-group-item-light p-3">
+											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											장바구니</a> 
 										<a href="#"
-											class="list-group-item list-group-item-action">
+											class="list-group-item list-group-item-action list-group-item-light p-3">
+											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											대여내역</a>
 										<a href="mypage_list.jsp"
-											class="list-group-item list-group-item-action">
+											class="list-group-item list-group-item-action list-group-item-light p-3">
+											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											문의하기</a>	 
 									</div>
 								</div>

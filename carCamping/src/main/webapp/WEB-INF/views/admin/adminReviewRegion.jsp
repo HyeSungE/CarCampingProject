@@ -1,24 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../top.jsp"%>
-<%@ include file="left.jsp"%> 
-
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-	crossorigin="anonymous"></script>
-<!-- CSS only -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-	crossorigin="anonymous">
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-<link rel="stylesheet"
-	href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  
+<%@ include file="left.jsp"%>   
 <!-- Content Column Grid -->
 <div class="col-md-8 themed-grid-col">
 	<div class="row" align="center">
@@ -38,7 +21,7 @@
 		<!-- 드랍 버튼 -->
 		<div class="col">
 			<div class="btn-group">
-				<button type="button" class="btn btn-primary dropdown-toggle"
+				<button type="button" class="btn btn-outline-success dropdown-toggle"
 					data-bs-toggle="dropdown" aria-expanded="false">정렬</button>
 				<ul class="dropdown-menu" style="">
 					<li><a class="dropdown-item" href="#">인기순</a></li>
@@ -52,7 +35,7 @@
 		<!-- 리뷰 검색 모달 버튼 -->
 			<div class="col" align="right">
 				<button type="button" 
-					class="btn btn-primary"
+					class="btn btn-outline-success"
 					data-bs-toggle="modal"
 					data-bs-target="#staticBackdrop">
 						리뷰 검색
@@ -122,7 +105,7 @@
 								type="range" class="form-range" id="disabledRange" disabled>
 							조회수|좋아요 개수<br>작성일<br>관리자 승인 여부
 						</p>
-						<button type="button" class="btn btn-primary"
+						<button type="button" class="btn btn-success"
 							data-bs-toggle="modal" data-bs-target="#staticBackdrop-1">
 							내용</button>
 					</div>
@@ -227,7 +210,7 @@
 
 						<!-- 버튼 영역 -->
 						<div class="modal-footer">
-							<button type="button" class="btn btn-primary">닫기</button>
+							<button type="button" class="btn btn-outline-success">닫기</button>
 						</div>
 					</div>
 				</div>
