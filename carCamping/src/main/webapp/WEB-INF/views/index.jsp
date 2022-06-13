@@ -23,7 +23,15 @@
 <link rel="stylesheet" href="resources/css/lightbox.css">
 <link rel="stylesheet" href="resources/css/map_region.css">
 <link rel="stylesheet" href="resources/css/ghost.css">
-
+<style>
+img, svg {
+    vertical-align: middle;
+}
+.container{
+	margin-left:15%;
+	margin-right:15%;
+}
+</style>
 </head>
 <body style="padding-top: 0px;">
 	<div class="jb-box">
@@ -135,33 +143,38 @@
     </script>
 
 	
-	<div class="footer">
-		<p>
-			이거보면 내용 수줘해줘요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-			Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. <br>
-			Design: <a href="https://templatemo.com" target="_parent"
-				title="free css templates">TemplateMo</a> <br> Distibuted By: <a
-				href="https://themewagon.com" target="_blank"
-				title="Build Better UI, Faster">ThemeWagon</a>
-		</p>
-	</div>
-	
-	<!--/.section -->
-
+	  <div class="footer" style="padding-bottom: 0px;margin-top: 0px;padding-top: 0px;">
+      <p style=" background-color:#E9EFC0; color:#6bbf57;margin-bottom: 0px;">Copyright © 2022 <a href="#">WITHCAR Co.</a> Ltd. All Rights Reserved. 
+          <br>
+          Design: <a href="#">WITHCAR DESIGN TEAM</a>
+          <br>
+          MADE BY: <a href="#">WITHCAR TEAM</a>
+        </p>
+    </div>
+<!--/.section -->
+</body>
 <!-- jQuery -->
 <script src="//code.jquery.com/jquery.js"></script>
 <!-- Bootstrap JavaScript -->
 
 <!-- Scripts -->
-<!-- Bootstrap core JavaScript -->
-<script src="resources/js/jquery.min.js"></script>
-<script src="resources/js/isotope.min.js"></script>
-<script src="resources/js/owl-carousel.js"></script>
-<script src="resources/js/lightbox.js"></script>
-<script src="resources/js/tabs.js"></script>
-<script src="resources/js/slick-slider.js"></script>
+	
+  <!-- Bootstrap core JavaScript -->
+  
+    <script src="resources/js/jquery.min.js"></script>
+    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
 
-<script>
+    <script src="resources/js/isotope.min.js"></script>
+    <script src="resources/js/owl-carousel.js"></script>
+    <script src="resources/js/lightbox.js"></script>
+    <script src="resources/js/tabs.js"></script>
+    <script src="resources/js/video.js"></script>
+    <script src="resources/js/slick-slider.js"></script>
+    <script src="resources/js/custom.js"></script>
+    <script>
+    
         //according to loftblog tut
         $('.nav li:first').addClass('active');
 
