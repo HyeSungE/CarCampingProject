@@ -42,8 +42,9 @@
 					id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
 					지역</button>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-					<li><button class="dropdown-item" type="button">서울|경기도</button></li>
-					<li><button class="dropdown-item" type="button">강원도</button></li>
+					<c:forEach items="${listRegion}" var="dto">
+						<li><button class="dropdown-item" type="button" onclick="location.href='adminRegion.region?region_num=${dto.region_num}'">${dto.region_name}</button></li>
+					</c:forEach>
 				</ul>
 			</div>
 			
@@ -66,7 +67,9 @@
 	
 
 	<!-- 장소 등록 모달 -->
-	<form class="row gy-2 gx-3 align-items-center">
+	<form class="row gy-2 gx-3 align-items-center" name="registerRegion" method="post" 
+	enctype="multipart/form-data" action="adminRegion.region">
+	
 	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
 		data-bs-keyboard="false" tabindex="-1"
 		aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -83,18 +86,18 @@
 						<div class="col">
 							<div class="form-floating">
 								<select class="form-select" id="floatingSelect"
-									aria-label="Floating label select example">
-									<option selected>서울/경기도</option>
-									<option value="1">강원도</option>
-									<option value="2">충청북도</option>
-									<option value="3">충청남도</option>
+									aria-label="Floating label select example"
+									name="region_num" >
+									<c:forEach items="${listRegion}" var="dto">
+										<option value="${dto.region_num}">${dto.region_name}</option>
+									</c:forEach>
 								</select> <label for="floatingSelect">지역</label>
 							</div>
 						</div>
 						<div class="col">
 							<div class="form-floating mb-3">
 								<input type="email" class="form-control" id="floatingInput"
-									placeholder="name@example.com"> <label
+									placeholder="name@example.com" name="ccr_name"> <label
 									for="floatingInput">장소명</label>
 							</div>
 						</div>
@@ -104,7 +107,7 @@
 						<div class="row">
 							<div class="form-floating mb-3">
 								<input type="email" class="form-control" id="floatingInput"
-									placeholder="name@example.com"> <label
+									placeholder="name@example.com" name="ccr_pricePerday"> <label
 									for="floatingInput">일일대여요금 (원단위로 숫자만)</label>
 							</div>
 						</div>
@@ -113,19 +116,19 @@
 				<!-- 차량접근 -->
 					<div class="row">
 						<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" align="center">
-							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<input type="checkbox" name="ccr_car1" class="btn-check" id="btncheck1" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck1">승용차</label>
 
-  							<input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+  							<input type="checkbox" name="ccr_car2" class="btn-check" id="btncheck2" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck2">소형 트레일러</label>
 
-  							<input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+  							<input type="checkbox" name="ccr_car3" class="btn-check" id="btncheck3" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck3">카라반</label>
   							
-  							<input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+  							<input type="checkbox" name="ccr_car4" class="btn-check" id="btncheck4" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck4">루프탑</label>
   							
-  							<input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+  							<input type="checkbox" name="ccr_car5" class="btn-check" id="btncheck5" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck5">캠핑카</label>
 						</div>
 						<div id="passwordHelpBlock" class="form-text">
@@ -136,19 +139,19 @@
 				<!-- 바닥종류 -->
 						<div class="row">
 							<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" align="center">
-							<input type="checkbox" class="btn-check" id="btncheck11" autocomplete="off">
+							<input type="checkbox" name="ccr_ground1" class="btn-check" id="btncheck11" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck11">맨흙</label>
 
-  							<input type="checkbox" class="btn-check" id="btncheck12" autocomplete="off">
+  							<input type="checkbox" name="ccr_ground2" class="btn-check" id="btncheck12" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck12">자갈</label>
 
-  							<input type="checkbox" class="btn-check" id="btncheck13" autocomplete="off">
+  							<input type="checkbox" name="ccr_ground3" class="btn-check" id="btncheck13" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck13">모래</label>
   							
-  							<input type="checkbox" class="btn-check" id="btncheck14" autocomplete="off">
+  							<input type="checkbox" name="ccr_ground4" class="btn-check" id="btncheck14" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck14">데크</label>
   							
-  							<input type="checkbox" class="btn-check" id="btncheck15" autocomplete="off">
+  							<input type="checkbox" name="ccr_ground5" class="btn-check" id="btncheck15" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck15">잔디</label>
 							</div>
 							<div id="passwordHelpBlock" class="form-text">
@@ -159,19 +162,19 @@
 				<!-- 유무 체크 -->
 						<div class="row">
 							<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" align="center">
-							<input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+							<input type="checkbox" name="ccr_amenity1" class="btn-check" id="btncheck6" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck6">화장실</label>
 
-  							<input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+  							<input type="checkbox" name="ccr_amenity2" class="btn-check" id="btncheck7" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck7">샤워실</label>
 
-  							<input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+  							<input type="checkbox" name="ccr_amenity3" class="btn-check" id="btncheck8" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck8">수도시설</label>
   							
-  							<input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off">
+  							<input type="checkbox" name="ccr_amenity4" class="btn-check" id="btncheck9" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck9">주변상가</label>
   							
-  							<input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off">
+  							<input type="checkbox" name="ccr_amenity5" class="btn-check" id="btncheck10" autocomplete="off">
   							<label class="btn btn-outline-primary" for="btncheck10">하천</label>
 						</div>
 							<div id="passwordHelpBlock" class="form-text">
@@ -184,27 +187,24 @@
 
 					<div class="form-floating mb-3">
 						<input type="email" class="form-control" id="floatingInput"
-							placeholder="name@example.com"> <label
+							placeholder="name@example.com" name="ccr_summary"
+							> <label
 							for="floatingInput">장소 요약 설명 (30자 이내) </label>
 					</div>
 					
 				<!-- 장소 세부설명 -->
 					<div class="form-floating">
 						<textarea class="form-control" placeholder="Leave a comment here"
-							id="floatingTextarea2" style="height: 100px"></textarea>
+							id="floatingTextarea2" style="height: 100px"
+							name = "ccr_content"
+							></textarea>
 						<label for="floatingTextarea2">장소세부설명 (1000자 이내)</label>
 					</div>
 					
 				<!-- 이미지 삽입 -->
 					&nbsp;
-					<div class="mb-3"> 
-						 <input class="form-control" type="file" id="formFile">
-						 <div id="passwordHelpBlock" class="form-text">
-  								메인 이미지를 선택해주세요
-						 </div>
-					</div>
 
-					<input class="form-control" id="formFileMultiple" type="file" multiple accept="image/*">
+					<input class="form-control" name="ccr_viewImage" id="formFileMultiple" type="file" multiple accept="image/*">
 					<div id="passwordHelpBlock" class="form-text">
   								최소 2개 이미지를 선택해주세요 (최대 5개)
 					</div>

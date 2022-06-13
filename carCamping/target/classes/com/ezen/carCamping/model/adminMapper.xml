@@ -6,4 +6,6 @@
 	<select id="listRegion" resultType="RegionDTO">
 		select * from Region 
 	</select>
+	
+	
 </mapper>

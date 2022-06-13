@@ -1,10 +1,22 @@
 package com.ezen.carCamping;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.ezen.carCamping.dto.RegionDTO;
+import com.ezen.carCamping.service.AdminMapper;
+
 @Controller
 public class AdminController {
+	
+	@Autowired
+	private AdminMapper adminMapper;
 	
 	@RequestMapping("/goAdmin.admin")
 	public String goAdmin() {
@@ -12,7 +24,16 @@ public class AdminController {
 	}
 	
 	@RequestMapping("/adminRegion.admin")
-	public String adminRegion() {
+	public String adminRegion(HttpServletRequest req) {
+		String region_num = req.getParameter("region_num");
+		List<RegionDTO> listRegion = adminMapper.listRegion();
+		List<ProductDTO> listCarCampingRegion = adminMapper.listCarCampingRegion();
+		if (region_num==null) {
+			listCarCampingRegion = 
+		}else {
+			listCarCampingRegion = 
+		}
+		req.setAttribute("listRegion", listRegion);
 		return "admin/adminRegion";
 	}
 	
