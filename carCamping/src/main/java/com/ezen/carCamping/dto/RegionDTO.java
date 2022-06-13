@@ -17,3 +17,5 @@ public class RegionDTO {
 		this.region_name = region_name;
 	}
 }
+
+//¿¬½À
