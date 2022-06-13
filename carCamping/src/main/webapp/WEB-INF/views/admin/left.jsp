@@ -17,7 +17,7 @@
 	<div class="d-flex flex-column flex-shrink-0 p-3 bg-light text-center" style="width: 250px; height: 700px;">
     <a href="/" class="sidebar-heading border-bottom bg-light">
       <use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-4"><b>관리자 페이지</b></span>
+      <span class="fs-4"><font color="green"><b>관리자 페이지</b></span></font>
     </a>
      <br>
     <ul class="nav nav-pills flex-column mb-auto">
