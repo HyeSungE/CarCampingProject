@@ -15,9 +15,38 @@
 <!-- 부가적인 테마 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-</head>
-	
 
+<script type="text/javascript">
+      function check(){
+         if (f.review_title.value==""){
+            alert("제목을 입력해 주세요!!")
+            f.review_title.focus()
+            return false
+         }
+         if (f.review_summaryContent.value==""){
+            alert("한줄리뷰를 입력해 주세요!!")
+            f.review_summaryContent.focus()
+            return false
+         }
+         if (f.review_regionScore.value==""){
+            alert("평점을 입력해 주세요!!")
+            f.review_regionScore.focus()
+            return false
+         }
+         if (f.review_regionImage1.value==""){
+            alert("이미지를 입력해 주세요!!")
+            f.review_regionImage1.focus()
+            return false
+         }
+         if (f.review_regionContent.value==""){
+             alert("상세리뷰를 입력해 주세요!!")
+             f.review_regionContent.focus()
+             return false
+          }
+         return true
+      }
+   </script>
+</head>
  <body> 
   <div class="container">
   				<div class="row">
@@ -25,7 +54,7 @@
   					<h2 class="section-title">리뷰쓰기</h2>
   					</div>
           <div class="col-md-8 col-md-offset-2">
- 	<form name="f" action="prod_input.do" id="review"
+ 	<form name="f" action="field_review.review" id="review"
                      method="post" enctype="multipart/form-data">
 
           <label for="goodsRating">제목</label>
@@ -37,7 +66,7 @@
             <br>
 
          <label for="goodsRating">장소평점</label>
-            <div id= "myform">
+            <div id= "myform" name="review_regionScore">
              <fieldset >
       		 <input type="radio" name="rating1" value="5" id="rate1"><label for="rate1">⭐</label>
        		 <input type="radio" name="rating1" value="4" id="rate2"><label for="rate2">⭐</label>
@@ -50,10 +79,14 @@
 
           <label for="goodsRating">장소이미지</label>
            <input type="file" class="form-control" name="review_regionImage1">
+           <input type="file" class="form-control" name="review_regionImage2">
+           <input type="file" class="form-control" name="review_regionImage3">
+           <input type="file" class="form-control" name="review_regionImage4">
+           <input type="file" class="form-control" name="review_regionImage5">
          <br>
      
           <label for="goodsRating">리뷰 상세</label>
-            <textarea class="form-control" id="content" name="content" placeholder="리뷰 상세" rows="5"></textarea>
+            <textarea class="form-control" id="content" name="review_regionContent" placeholder="리뷰 상세" rows="5"></textarea>
            <br>
               <button class="btn btn-success mb-3" type="submit">리뷰 작성</button>
                <button class="btn btn-success mb-3" type="reset">취소</button>

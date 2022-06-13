@@ -14,10 +14,10 @@
 		${sql}
 	</select>
 	<select id="getMemberId" parameterType="String" resultType="memberDTO">
-		select * from jsp_member where mem_id=#{mem_id}
+		select * from Member where mem_id=#{mem_id}
 	</select>
 	<insert id="insertMember" parameterType="MemberDTO">
-		insert into member values(?,#{mem_id},#{mem_email},#{mem_password},#{mem_userName},#{mem_nickName},#{mem_phone},#{mem_birthday},#{mem_gender},#{region_num})
+		insert into Member values(?,#{mem_id},#{mem_email},#{mem_password},#{mem_userName},#{mem_nickName},#{mem_phone},#{mem_birthday},#{mem_gender},#{region_num})
 	</insert>
 </mapper>
 

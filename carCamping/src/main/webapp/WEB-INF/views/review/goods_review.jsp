@@ -15,6 +15,37 @@
 <!-- 부가적인 테마 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+
+<script type="text/javascript">
+      function check(){
+         if (f.rp_title.value==""){
+            alert("제목을 입력해 주세요!!")
+            f.rp_title.focus()
+            return false
+         }
+         if (f.rp_summaryContent.value==""){
+            alert("한줄리뷰를 입력해 주세요!!")
+            f.rp_summaryContent.focus()
+            return false
+         }
+         if (f.rp_score.value==""){
+            alert("평점을 입력해 주세요!!")
+            f.rp_score.focus()
+            return false
+         }
+         if (f.rp_image1.value==""){
+            alert("이미지를 입력해 주세요!!")
+            f.rp_image1.focus()
+            return false
+         }
+         if (f.rp_content.value==""){
+             alert("상세리뷰를 입력해 주세요!!")
+             f.rp_content.focus()
+             return false
+          }
+         return true
+      }
+   </script>
 </head>
 	
 
@@ -25,11 +56,11 @@
   					<h2 class="section-title">리뷰쓰기</h2>
   					</div>
           <div class="col-md-8 col-md-offset-2">
- 	<form name="f" action="prod_input.do" id="review"
+ 	<form name="f" action="goods_review.review" id="review"
                      method="post" enctype="multipart/form-data">
 
           <label for="goodsRating">제목</label>
-           <input class="form-control" id="review_title" name="review_title" type="text" required />
+           <input class="form-control" id="rp_title" name="review_title" type="text" required />
         	<br>
 
             <label for="goodsRating">용품 한줄리뷰</label>
@@ -50,10 +81,14 @@
 
           <label for="goodsRating">용품이미지</label>
            <input type="file" class="form-control" name="rp_image1">
+            <input type="file" class="form-control" name="rp_image2">
+             <input type="file" class="form-control" name="rp_image3">
+              <input type="file" class="form-control" name="rp_image4">
+               <input type="file" class="form-control" name="rp_image5">
          <br>
      
           <label for="goodsRating">리뷰 상세</label>
-            <textarea class="form-control" id="content" name="content" placeholder="리뷰 상세" rows="5"></textarea>
+            <textarea class="form-control" id="content" name="rp_content" placeholder="리뷰 상세" rows="5"></textarea>
            <br>
               <button class="btn btn-success mb-3" type="submit">리뷰 작성</button>
                <button class="btn btn-success mb-3" type="reset">취소</button>
