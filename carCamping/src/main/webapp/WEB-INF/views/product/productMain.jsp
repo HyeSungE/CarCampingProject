@@ -162,6 +162,7 @@
 									</div>
 								</div>
 							</div>
+							
 							<div class="gm-u thrid">
 								<div class="d-flex p-2">
 									<div class="card" style="width: 18rem;">
