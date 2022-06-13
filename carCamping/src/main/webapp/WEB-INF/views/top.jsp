@@ -47,27 +47,29 @@
 
 <body>
 	<!-- ***** Header Area Start ***** -->
-	<header class="header-area header-sticky">
-		<div class="container">
-			<div class="row">
+	<header class="header-area header-sticky" style="background-color : #83BD75;"><!-- 색깔 바꾸기 -->
+		<div class="container" style="height: 90px";>	
+			<div class="row" style="height: 90px";>
 				<div class="col-12">
 					<nav class="main-nav">
 						<!-- ***** Logo Start ***** -->
-						<a href="index.html" class="logo"> 로고들어가요 </a>
+						<a href="index.html" class="logo" style="height: 90px;"><img src="resources/images/cambakLogo.png" style="width: 120px;height: 50px;"/></a>
 						<!-- ***** Logo End ***** -->
 						<!-- ***** Menu Start ***** -->
 						<ul class="nav">
-							<li class="scroll-to-section"><a href="#top" class="active">맨위</a></li>
+							<li ><a  href="홈페이지로"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+  							<path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+							</svg></a></li>
 							<li><a href="login.jsp">로그인</a></li>
-							<li class="scroll-to-section"><a href="#apply">Apply Now</a></li>
-							<li class="has-sub"><a href="javascript:void(0)">Pages</a>
-								<ul class="sub-menu">
-									<li><a href="meetings.html">Upcoming Meetings</a></li>
-									<li><a href="meeting-details.html">Meeting Details</a></li>
+							<li><a href="login.jsp">회원가입</a></li>
+							<li class="has-sub"><a href="javascript:void(0)">바로가기</a>
+								<ul class="sub-menu" style="background: #e9efc08c;">
+									<li><a href="차박지 리뷰"  style="background: #E9EFC0;">차박지 리뷰</a></li>
+									<li><a href="용품대여"  style="background: #E9EFC0;">용품 대여</a></li>
 								</ul></li>
-							<li class="scroll-to-section"><a href="#courses">Courses</a></li>
+							<li><a href="login.jsp">리뷰쓰기</a></li>
 							<li class="scroll-to-section">
-								<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+								<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="padding-top:0px; padding-bottom:0px;">
 									프로필
 								</a>
 							</li>
@@ -83,22 +85,22 @@
 										닉네임/프로필사진
 									</div>
 									<div class="list-group">
-										<a href="myPageProfile.myPage"
+										<a href="mypage_profile.jsp"
 											class="list-group-item list-group-item-action"> 			
 											내 정보 </a> 
-										<a href="myPageWriteReview.myPage"
+										<a href="#"
 											class="list-group-item list-group-item-action">
 											내가 쓴 리뷰</a> 
-										<a href="myPageLikeReview.myPage"
+										<a href="#"
 											class="list-group-item list-group-item-action">
 											내가 좋아한 리뷰</a> 
-										<a href="myPageCart.myPage"
+										<a href="cart.jsp"
 											class="list-group-item list-group-item-action">
 											장바구니</a> 
-										<a href="myPageRental.myPage"
+										<a href="#"
 											class="list-group-item list-group-item-action">
 											대여내역</a>
-										<a href="myPageQuestion.myPage"
+										<a href="mypage_list.jsp"
 											class="list-group-item list-group-item-action">
 											문의하기</a>	 
 									</div>
