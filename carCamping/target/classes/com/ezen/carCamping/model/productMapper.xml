@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <mapper namespace="com.ezen.carCamping.model.productMapper"> 
-
+	<select id="listProduct" resultType="productDTO">
+	select * from product;
+	</select>
 </mapper>
 
