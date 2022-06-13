@@ -6,14 +6,6 @@
 <div class="col-md-8 themed-grid-col">
 	<div class="row" align="center">
 		<div class="row">
-			<figure class="text-center">
-				<blockquote class="blockquote">
-					<p>A well-known quote, contained in a blockquote element.</p>
-				</blockquote>
-				<figcaption class="blockquote-footer">
-					Someone famous in <cite title="Source Title">Source Title</cite>
-				</figcaption>
-			</figure>
 		</div>
 		<p class="fw-bolder">용품 리뷰 목록</p>
 	</div>
