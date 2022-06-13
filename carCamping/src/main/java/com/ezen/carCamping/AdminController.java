@@ -27,12 +27,12 @@ public class AdminController {
 	public String adminRegion(HttpServletRequest req) {
 		String region_num = req.getParameter("region_num");
 		List<RegionDTO> listRegion = adminMapper.listRegion();
-		List<ProductDTO> listCarCampingRegion = adminMapper.listCarCampingRegion();
-		if (region_num==null) {
-			listCarCampingRegion = 
-		}else {
-			listCarCampingRegion = 
-		}
+//		List<ProductDTO> listCarCampingRegion = adminMapper.listCarCampingRegion();
+//		if (region_num==null) {
+//			listCarCampingRegion = 
+//		}else {
+//			listCarCampingRegion = 
+//		}
 		req.setAttribute("listRegion", listRegion);
 		return "admin/adminRegion";
 	}
