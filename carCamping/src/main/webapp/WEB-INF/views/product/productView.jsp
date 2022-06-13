@@ -1,7 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="../top.jsp"%>
+<!-- 
+1. 로그인 했을떄 안했을때 넘어가는 페이지 분리
+2.리스트 다음페이지로 넘기기
+3.리뷰 검색
+4.대여날짜 넘기기
+5.정렬
+※일단 페이지 내에서 할 수 있는 기능부터 구현할것!!
+ -->
 
+<!-- 부트스트랩 영역 -->
 <link
 		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
 		rel="stylesheet"
@@ -10,10 +19,14 @@
 	
 	<link rel="stylesheet"
 		href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+		
 	<link rel="stylesheet"
 		href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
-
+		
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!-- 부트스트랩 영역 끝 -->
+	 
+<!-- 용품상세보기 영역 -->
 <div class="container-fluid themed-container"
 	style="margin-top: 40px; margin-left: 10%;">
 	<!-- Row Grid -->
@@ -26,7 +39,11 @@
 				<svg class="bi me-2" width="40" height="32">
 					<use xlink:href="#bootstrap"></use></svg> <span class="fs-4">용품
 					상세정보</span>
-			</a> <img src="images/1.jpg" class="card-img-top" alt="...">
+					
+			<!-- 이미지 영역 -->
+			</a> <img src="resources/images/carbak1.jpg" class="card-img-top" alt="...">
+			<!-- 이미지 영역 끝 -->
+			
 			<script type="text/javascript">
 		$("#mForm").submit(function(){
 			var indate2 = $("#indate1").val();
@@ -119,6 +136,9 @@
 			</form>
 
 		</div>
+		<!-- 용품 상세보기 영역 끝 -->
+		
+		<!-- 팝업 연결 영역 -->
 		<script>
         function popup(){
             var url = "productReviewView.product";
@@ -127,19 +147,13 @@
             window.open(url, name, option);
         }
     </script>
+    <!-- 팝업 연결영역 끝 -->
+    
 		<div class="col-md-8 themed-grid-col">
 			<div class="row" align="center">
 				<div class="row">
-					<figure class="text-center">
-						<blockquote class="blockquote">
-							<p></p>
-						</blockquote>
-						<figcaption class="blockquote-footer">
-							<cite title="Source Title"></cite>
-						</figcaption>
-					</figure>
 				</div>
-				<h2>차박지 리뷰 목록</h2>
+				<h2>용품 리뷰 목록</h2>
 			</div>
 			<div class="row">
 				<!-- 드랍 버튼 -->
@@ -218,7 +232,39 @@
 				<tr>
 					<td>
 						<div class="card" style="width: 18rem;">
-							<img src="Region1.jpg" class="card-img-top">
+						<!-- 리뷰리스트 이미지 영역 -->
+							<img src="resources/images/carbak4.jpg" class="card-img-top">
+							<!-- 리뷰리스트 이미지 영역 끝 -->
+							<div class="card-body">
+								<h5 class="card-title">리뷰제목</h5>
+								<p class="card-text">
+									<label for="disabledRange" class="form-label">평점|평점개수</label> <input
+										type="range" class="form-range" id="disabledRange" disabled>
+									조회수|좋아요 개수<br>작성일
+								</p>
+								<a href="javascript:popup()"><button type="button"
+										class="btn btn-primary" data-bs-toggle="modal">내용</button></a>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="card" style="width: 18rem;">
+							<img src="resources/images/carbak4.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">리뷰제목</h5>
+								<p class="card-text">
+									<label for="disabledRange" class="form-label">평점|평점개수</label> <input
+										type="range" class="form-range" id="disabledRange" disabled>
+									조회수|좋아요 개수<br>작성일
+								</p>
+								<a href="javascript:popup()"><button type="button"
+										class="btn btn-primary" data-bs-toggle="modal">내용</button></a>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="card" style="width: 18rem;">
+							<img src="resources/images/carbak4.jpg" class="card-img-top">
 							<div class="card-body">
 								<h5 class="card-title">리뷰제목</h5>
 								<p class="card-text">

@@ -1,5 +1,7 @@
 package com.ezen.carCamping;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -12,9 +14,9 @@ public class ProductController {
 	}
 	
 	@RequestMapping("/productView.product")
-	public String productView() {
+	public String productView(HttpServletRequest req) {
 		return "product/productView";
-	}
+	}//여기에 ListBoardCommand에 있는 함수 불러오긴
 	
 	@RequestMapping("/productReviewView.product")
 	public String productReviewView() {

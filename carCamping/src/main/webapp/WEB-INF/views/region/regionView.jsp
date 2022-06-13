@@ -27,7 +27,6 @@
 					페이지</span>
 			</a>
 			<hr>
-			
 				<svg class="bi me-2" width="16" height="16">
 					<use xlink:href="#home"></use></svg>
 				<img src="resources/images/1.jpg" class="card-img-top" alt="...">
@@ -38,8 +37,6 @@
 				<br> 화장실 유무:
 				<br> 화장실 유무:
 				<br> 화장실 유무:
-		
-
 			<hr>
 		</div>
 
