@@ -2,22 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../top.jsp"%>
 <%@ include file="left.jsp"%>   
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-	crossorigin="anonymous"></script>
-<!-- CSS only -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-	crossorigin="anonymous">
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-<link rel="stylesheet"
-	href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
 <!-- Content Column Grid -->
 <div class="col-md-8 themed-grid-col">
 	<div class="row">
@@ -38,7 +22,7 @@
 		<!-- 드랍 버튼 -->
 			<div class="col" align="left">
 				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button"
+					<button class="btn btn-outline-success" dropdown-toggle" type="button"
 						id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
 						지역선택</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -54,7 +38,7 @@
 		<!-- 대리점 등록 모달 버튼 -->
 			<div class="col" align="right">
 				<button type="button" 
-					class="btn btn-primary"
+					class="btn btn-outline-success"
 					data-bs-toggle="modal"
 					data-bs-target="#staticBackdrop">
 						대리점 등록
@@ -121,9 +105,9 @@
 						
 				<!-- 버튼 영역 -->
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary"
+						<button type="button" class="btn btn-outline-success"
 							data-bs-dismiss="modal">닫기</button>
-						<button type="button" class="btn btn-primary">등록</button>
+						<button type="button" class="btn btn-outline-success">등록</button>
 					</div>
 				</div>
 			</div>
@@ -147,7 +131,7 @@
 			<td>서울시 노원구 덕릉로 126라길11</td>
 			<td>02-933-9933</td>
 			<td><button type="button" 
-					class="btn btn-primary"
+					class="btn btn-success"
 					data-bs-toggle="modal"
 					data-bs-target="#staticBackdrop-11">
 						수정
@@ -159,7 +143,7 @@
 			<td>서울시 노원구 덕릉로 126라길11</td>
 			<td>02-933-9933</td>
 			<td><button type="button" 
-					class="btn btn-primary"
+					class="btn btn-success"
 					data-bs-toggle="modal"
 					data-bs-target="#staticBackdrop-11">
 						수정
@@ -171,7 +155,7 @@
 			<td>서울시 노원구 덕릉로 126라길11</td>
 			<td>02-933-9933</td>
 			<td><button type="button" 
-					class="btn btn-primary"
+					class="btn btn-success"
 					data-bs-toggle="modal"
 					data-bs-target="#staticBackdrop-11">
 						수정
@@ -235,9 +219,9 @@
 						
 				<!-- 버튼 영역 -->
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary"
+						<button type="button" class="btn btn-outline-success"
 							data-bs-dismiss="modal">닫기</button>
-						<button type="button" class="btn btn-primary">수정</button>
+						<button type="button" class="btn btn-outline-success">수정</button>
 					</div>
 				</div>
 			</div>
