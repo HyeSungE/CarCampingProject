@@ -3,10 +3,7 @@ package com.ezen.carCamping.dto;
 public class ProductCategoryDTO {
 	private int pc_num;
 	private String pc_name;
-<<<<<<< HEAD
-=======
 	
->>>>>>> 70bf619b5fa801e8d76176abc8f175b3deccfa2b
 	public int getPc_num() {
 		return pc_num;
 	}

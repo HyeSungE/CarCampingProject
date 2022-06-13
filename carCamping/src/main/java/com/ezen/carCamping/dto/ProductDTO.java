@@ -7,27 +7,20 @@ public class ProductDTO {
 	private String prod_name;
 	private int prod_popular;
 	private int prod_price;
-<<<<<<< HEAD
 	private String prod_mainlmage;
 	private String prod_viewImage;
-=======
 	private String prod_viewImage1;
 	private String prod_viewImage2;
 	private String prod_viewImage3;
 	private String prod_viewImage4;
 	private String prod_viewImage5;
->>>>>>> 70bf619b5fa801e8d76176abc8f175b3deccfa2b
 	private String prod_summary;
 	private String prod_viewContent;
 	private String prod_sysdate;
 	private String prod_update;
 	private int prod_reviewCount;
-<<<<<<< HEAD
-	private int prod_reviewScore;
-=======
 	private float prod_reviewScore;
 	
->>>>>>> 70bf619b5fa801e8d76176abc8f175b3deccfa2b
 	public int getProd_num() {
 		return prod_num;
 	}
@@ -64,7 +57,6 @@ public class ProductDTO {
 	public void setProd_price(int prod_price) {
 		this.prod_price = prod_price;
 	}
-<<<<<<< HEAD
 	public String getProd_mainlmage() {
 		return prod_mainlmage;
 	}
@@ -76,7 +68,7 @@ public class ProductDTO {
 	}
 	public void setProd_viewImage(String prod_viewImage) {
 		this.prod_viewImage = prod_viewImage;
-=======
+	}
 	
 	public String getProd_viewImage1() {
 		return prod_viewImage1;
@@ -107,7 +99,6 @@ public class ProductDTO {
 	}
 	public void setProd_viewImage5(String prod_viewImage5) {
 		this.prod_viewImage5 = prod_viewImage5;
->>>>>>> 70bf619b5fa801e8d76176abc8f175b3deccfa2b
 	}
 	public String getProd_summary() {
 		return prod_summary;
@@ -139,20 +130,14 @@ public class ProductDTO {
 	public void setProd_reviewCount(int prod_reviewCount) {
 		this.prod_reviewCount = prod_reviewCount;
 	}
-<<<<<<< HEAD
-	public int getProd_reviewScore() {
-		return prod_reviewScore;
-	}
 	public void setProd_reviewScore(int prod_reviewScore) {
 		this.prod_reviewScore = prod_reviewScore;
 	}
 	
-=======
 	public float getProd_reviewScore() {
 		return prod_reviewScore;
 	}
 	public void setProd_reviewScore(float prod_reviewScore) {
 		this.prod_reviewScore = prod_reviewScore;
 	}
->>>>>>> 70bf619b5fa801e8d76176abc8f175b3deccfa2b
 }
