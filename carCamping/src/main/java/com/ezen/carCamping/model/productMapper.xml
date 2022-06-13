@@ -4,5 +4,14 @@
 	<select id="listProduct" resultType="productDTO">
 	select * from product;
 	</select>
+	
+	<select id="getBoardCount" resultType="int">
+	select count(*) from product;
+	</select>
+	
+	<select id="listProdReview" resultType="ProdReviewDTO" parameterType="int">
+	select * from ProdReview;
+	</select>
+	
 </mapper>
 

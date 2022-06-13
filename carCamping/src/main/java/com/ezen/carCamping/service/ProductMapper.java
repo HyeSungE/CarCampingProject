@@ -16,4 +16,10 @@ public class ProductMapper {
 		List<ProductDTO>list= sqlSession.selectList("listProduct");
 		return list; 
 	}
+	
+	public int getProductCount() {
+		int res = sqlSession.selectOne("getBoardCount");
+		return res;
+	}
+	
 }

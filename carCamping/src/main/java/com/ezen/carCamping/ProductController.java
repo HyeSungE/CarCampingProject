@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.ezen.carCamping.dto.ProductCategoryDTO;
+import com.ezen.carCamping.dto.ProductDTO;
 import com.ezen.carCamping.service.ProductMapper;
 
 @Controller
@@ -23,12 +24,22 @@ public class ProductController {
 	}
 	
 	@RequestMapping("/productView.product")
-<<<<<<< HEAD
 	public String productView(HttpServletRequest req) {
-=======
-	public String productView() {
-		List<ProductCategoryDTO> plist= SqlSession.listProduct();
->>>>>>> 69b97fa43f4848e582057c905fa6381b3dcdde61
+		int pageSize = 5;
+		String pageNum = req.getParameter("pageNum");
+		if(pageNum==null) {
+			pageNum = "1";
+		}
+		
+		int currentPage = Integer.parseInt(pageNum);
+		int startRow = (currentPage)*pageSize +1;
+		int endRow = startRow + pageSize -1;
+		int rowCount = productMapper.getProductCount();
+		List<ProductDTO> list = null;
+		if(rowCount>0) {
+			
+		}
+		
 		return "product/productView";
 	}//여기에 ListBoardCommand에 있는 함수 불러오긴
 	
