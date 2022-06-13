@@ -7,7 +7,6 @@
 	select * from product;
 	</select>
 	
-<<<<<<< HEAD
 	<select id="getBoardCount" resultType="int">
 	select count(*) from product;
 	</select>
@@ -15,12 +14,10 @@
 	<select id="listProdReview" resultType="ProdReviewDTO" parameterType="int">
 	select * from ProdReview;
 	</select>
-=======
 	<select id="findProduct" parameterType="java.util.Map" resultType="productDTO">
 		select * from product where ${search} = #{searchString}
 	</select>
 	
->>>>>>> cbed9ea1c50c62715890e8a709d153506f7e682c
 	
 </mapper>
 

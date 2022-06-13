@@ -1,12 +1,9 @@
 package com.ezen.carCamping;
 
-<<<<<<< HEAD
 import javax.servlet.http.HttpServletRequest;
 
-=======
 import java.io.File;
 import java.io.IOException;
->>>>>>> cbed9ea1c50c62715890e8a709d153506f7e682c
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -28,7 +25,7 @@ public class ProductController {
 	
 
 	@Autowired
-	private SqlSession sqlSession;
+	private ProductMapper productMapper;
 	  
 	@RequestMapping("/goProduct.product")
 	public String goProduct() {
@@ -37,14 +34,12 @@ public class ProductController {
 	}
 	 
 	@RequestMapping("/productView.product")
-<<<<<<< HEAD
 	public String productView(HttpServletRequest req) {
 		int pageSize = 5;
 		String pageNum = req.getParameter("pageNum");
 		if(pageNum==null) {
 			pageNum = "1";
 		}
-		
 		int currentPage = Integer.parseInt(pageNum);
 		int startRow = (currentPage)*pageSize +1;
 		int endRow = startRow + pageSize -1;
@@ -57,13 +52,11 @@ public class ProductController {
 		return "product/productView";
 	}//여기에 ListBoardCommand에 있는 함수 불러오긴
 	
-=======
-	public String productView() {
-		List<ProductCategoryDTO> plist=sqlSession.selectList("listProduct");
+	/*public String productView(HttpServletRequest req) {
+		List<ProductDTO> plist = productMapper.listProduct();
 		return "product/productView";
-	}
+	}*/
 	 
->>>>>>> cbed9ea1c50c62715890e8a709d153506f7e682c
 	@RequestMapping("/productReviewView.product")
 	public String productReviewView() {
 		return "product/productReviewView";
