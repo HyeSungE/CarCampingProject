@@ -1,11 +1,11 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
   </section>
       <div class="footer" style="padding-bottom: 0px;margin-top: 0px;padding-top: 0px;">
-      <p style="margin-bottom: 0px;">Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. 
+      <p style=" background-color:#E9EFC0; color:#6bbf57;margin-bottom: 0px;">Copyright © 2022 <a href="#">WITHCAR Co.</a> Ltd. All Rights Reserved. 
           <br>
-          Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
+          Design: <a href="#">WITHCAR DESIGN TEAM</a>
           <br>
-          Distibuted By: <a href="https://themewagon.com" target="_blank" title="Build Better UI, Faster">ThemeWagon</a>
+          MADE BY: <a href="#">WITHCAR TEAM</a>
         </p>
     </div>
 <!--/.section -->
