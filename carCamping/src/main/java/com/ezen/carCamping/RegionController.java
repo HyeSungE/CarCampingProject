@@ -18,6 +18,7 @@ public class RegionController {
 	
 	@RequestMapping("/regionView.region")
 	public String regionView() {
+		System.out.println();
 		return "/region/regionView";
 	}
 }
