@@ -2,22 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../top.jsp"%>
 <%@ include file="left.jsp"%>   
-
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-	crossorigin="anonymous"></script>
-<!-- CSS only -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-	crossorigin="anonymous">
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-<link rel="stylesheet"
-	href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <!-- Content Column Grid -->
 <div class="col-md-8 themed-grid-col">
 	<div class="row">
@@ -38,7 +22,7 @@
 		<!-- 드랍 버튼 -->
 			<div class="col" align="left">
 				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button"
+					<button class="btn btn-outline-success dropdown-toggle" type="button"
 						id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
 						정렬</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -53,7 +37,7 @@
 		<!-- 공지사항 등록 모달 버튼 -->
 			<div class="col" align="right">
 				<button type="button" 
-					class="btn btn-primary"
+					class="btn btn-outline-success"
 					data-bs-toggle="modal"
 					data-bs-target="#staticBackdrop">
 						공지사항 등록
@@ -96,38 +80,53 @@
 				
 				<!-- 이미지 삽입 -->
 
-						<div class="mb-3">
-							<label for="formFile" class="form-label">공지사항 이미지 1</label> <input
-								class="form-control" type="file" id="formFile">
+						&nbsp; 
+
+						<input class="form-control" id="formFileMultiple-1" type="file"
+							multiple accept="image/*">
+						<div id="passwordHelpBlock" class="form-text">
+						이미지 업로드는 최대 5개만 가능합니다
 						</div>
-						<div class="mb-3">
-							<label for="formFile" class="form-label">공지사항 이미지 2</label> <input
-								class="form-control" type="file" id="formFile">
-						</div>
-						<div class="mb-3">
-							<label for="formFile" class="form-label">공지사항 이미지 3</label> <input
-								class="form-control" type="file" id="formFile">
-						</div>
-						<div class="mb-3">
-							<label for="formFile" class="form-label">공지사항 이미지 4</label> <input
-								class="form-control" type="file" id="formFile">
-						</div>
-						<div class="mb-3">
-							<label for="formFile" class="form-label">공지사항 이미지 5</label> <input
-								class="form-control" type="file" id="formFile">
-						
+						<ul id="file-list-1">
+							<li class="no-items"></li>
+						</ul>
+
+						<script>
+							var filesUpload = document
+									.getElementById("formFileMultiple-1"), fileList = document
+									.getElementById("file-list-1");
+
+							function traverseFiles(files) {
+								var li, file, fileInfo;
+								fileList.innerHTML = "";
+
+								for (var i = 0, il = files.length; i < il; i++) {
+									li = document.createElement("li");
+									file = files[i];
+									fileInfo = "<div><strong>파일명:</strong> "
+											+ file.name + "</div>";
+
+									li.innerHTML = fileInfo;
+									fileList.appendChild(li);
+								}
+								;
+							};
+
+							filesUpload.onchange = function() {
+								traverseFiles(this.files);
+							};
+						</script>
 						
 				<!-- 버튼 영역 -->
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary"
+						<button type="button" class="btn btn-outline-success"
 							data-bs-dismiss="modal">닫기</button>
-						<button type="button" class="btn btn-primary">등록</button>
+						<button type="button" class="btn btn-outline-success">등록</button>
 					</div>
 				</div>
 			</div>
 			</div>
 		</div>
-	</div>
 	</form>
 	<!-- 공지사항 등록 모달 끝 -->
 	
@@ -144,7 +143,7 @@
 			<td>2022-05-29</td>
 			<td>2022-06-07</td>
 			<td><button type="button" 
-					class="btn btn-primary"
+					class="btn btn-success"
 					data-bs-toggle="modal"
 					data-bs-target="#staticBackdrop-11">
 						수정
@@ -155,7 +154,7 @@
 			<td>2022-05-29</td>
 			<td>2022-06-07</td>
 			<td><button type="button" 
-					class="btn btn-primary"
+					class="btn btn-success"
 					data-bs-toggle="modal"
 					data-bs-target="#staticBackdrop-11">
 						수정
@@ -166,7 +165,7 @@
 			<td>2022-05-29</td>
 			<td>2022-06-07</td>
 			<td><button type="button" 
-					class="btn btn-primary"
+					class="btn btn-success"
 					data-bs-toggle="modal"
 					data-bs-target="#staticBackdrop-11">
 						수정
@@ -175,7 +174,7 @@
 		
 	</table>
 	
-	<!-- 대리점 수정 모달 -->
+	<!-- 공지사항 수정 모달 -->
 	<form class="row gy-2 gx-3 align-items-center">
 		<div class="modal fade" id="staticBackdrop-11" data-bs-backdrop="static"
 			data-bs-keyboard="false" tabindex="-1"
@@ -206,36 +205,53 @@
 
 						<!-- 이미지 삽입 -->
 
-						<div class="mb-3">
-							<label for="formFile" class="form-label">공지사항 이미지 1</label> <input
-								class="form-control" type="file" id="formFile">
+						&nbsp; 
+
+						<input class="form-control" id="formFileMultiple-1" type="file"
+							multiple accept="image/*">
+						<div id="passwordHelpBlock" class="form-text">
+							이미지 업로드는 최대 5개만 가능합니다
 						</div>
-						<div class="mb-3">
-							<label for="formFile" class="form-label">공지사항 이미지 2</label> <input
-								class="form-control" type="file" id="formFile">
-						</div>
-						<div class="mb-3">
-							<label for="formFile" class="form-label">공지사항 이미지 3</label> <input
-								class="form-control" type="file" id="formFile">
-						</div>
-						<div class="mb-3">
-							<label for="formFile" class="form-label">공지사항 이미지 4</label> <input
-								class="form-control" type="file" id="formFile">
-						</div>
-						<div class="mb-3">
-							<label for="formFile" class="form-label">공지사항 이미지 5</label> <input
-								class="form-control" type="file" id="formFile">
+						<ul id="file-list-1">
+							<li class="no-items"></li>
+						</ul>
+
+						<script>
+							var filesUpload = document
+									.getElementById("formFileMultiple-1"), fileList = document
+									.getElementById("file-list-1");
+
+							function traverseFiles(files) {
+								var li, file, fileInfo;
+								fileList.innerHTML = "";
+
+								for (var i = 0, il = files.length; i < il; i++) {
+									li = document.createElement("li");
+									file = files[i];
+									fileInfo = "<div><strong>파일명:</strong> "
+											+ file.name + "</div>";
+
+									li.innerHTML = fileInfo;
+									fileList.appendChild(li);
+								}
+								;
+							};
+
+							filesUpload.onchange = function() {
+								traverseFiles(this.files);
+							};
+						</script>
 
 
 							<!-- 버튼 영역 -->
 							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary"
+								<button type="button" class="btn btn-outline-success"
 									data-bs-dismiss="modal">닫기</button>
-								<button type="button" class="btn btn-primary">수정</button>
+								<button type="button" class="btn btn-outline-success">수정</button>
 							</div>
 						</div>
 					</div>
-				</div>
+				
 			</div>
 		</div>
 	</form>
