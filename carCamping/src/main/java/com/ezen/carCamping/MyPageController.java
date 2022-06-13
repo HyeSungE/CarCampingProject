@@ -40,5 +40,9 @@ public class MyPageController {
 		return "myPage/myPageLikeReview";
 	}
 	
-
+	@RequestMapping("/myPageTest.myPage")
+	public String myPageTest() {
+		System.out.println();
+		return "myPage/myPageTest";
+	}
 }
