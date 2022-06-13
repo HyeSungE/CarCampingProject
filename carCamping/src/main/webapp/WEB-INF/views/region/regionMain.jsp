@@ -46,7 +46,9 @@
 									var options = {
 										center : new kakao.maps.LatLng(36, 128),
 										level : 13,
-										draggable : false
+										draggable : false,
+										disableDoubleClick : true,
+										disableDoubleClickZoom : true
 									};
 									var map = new kakao.maps.Map(container,
 											options);
@@ -85,7 +87,7 @@
 										var markerPosition = new kakao.maps.LatLng(
 												PositionArr[i].x,
 												PositionArr[i].y);
-										var imageSrc ="mapMarkerImage/"+(i+1)+".png"
+										var imageSrc ="resources/images/mapMarkerImage/"+(i+1)+".png"
 										var markerImage = new kakao.maps.MarkerImage(
 												imageSrc, imageSize, imageOption);
 
@@ -120,21 +122,20 @@
 								<li class="list-group-item fs-2 text-center"><button
 										class="btn btn-outline-warning btn-lg" type="button" disabled
 										style="-bs-btn-padding-x: 70px; - -bs-btn-padding-y: 15px;"
-										
 									>
 										인 기 글 <i class="bi bi-trophy-fill" width="40" height="40"
 											fill="currentColor"></i>
 									</button>
 								<li class="list-group-item position-relative"><img
-									src="sik.jpg" class="img-responsive rounded-circle"
+									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
 									style="width: 107px; height: 107px;">
-									<div
-										class="position-absolute top-50 start-50 translate-middle ">
-										<a href="regionView.region">I'm
-										a flexbox container!</a></div></li>
+									<div class="position-absolute top-50 start-50 translate-middle">
+									<a href="regionView.region">I'm
+										a flexbox container!</a>
+									</div></li>>
 
 								<li class="list-group-item position-relative"><img
-									src="sik.jpg" class="img-responsive rounded-circle"
+									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
 									style="width: 107px; height: 107px;">
 									<div class="position-absolute top-50 start-50 translate-middle">
 									<a href="regionView.region">I'm
@@ -142,7 +143,7 @@
 									</div></li>
 
 								<li class="list-group-item position-relative"><img
-									src="sik.jpg" class="img-responsive rounded-circle"
+									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
 									style="width: 107px; height: 107px;">
 									<div class="position-absolute top-50 start-50 translate-middle">
 									<a href="regionView.region">I'm
@@ -150,7 +151,7 @@
 									</div></li>
 
 								<li class="list-group-item position-relative"><img
-									src="sik.jpg" class="img-responsive rounded-circle"
+									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
 									style="width: 107px; height: 107px;">
 									<div class="position-absolute top-50 start-50 translate-middle">
 									<a href="regionView.region">I'm
