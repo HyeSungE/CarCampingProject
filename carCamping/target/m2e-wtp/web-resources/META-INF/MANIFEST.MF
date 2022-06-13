@@ -1,9 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
 Built-By: i7C-43
-=======
-Built-By: User
->>>>>>> 93943a3ebd39397d2a5b3489c71636f890f675cd
 Build-Jdk: 1.8.0_321
 Created-By: Maven Integration for Eclipse
 
