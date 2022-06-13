@@ -40,8 +40,9 @@
 	box-shadow: 0 0 5px #555;
 	max-width: 100%;
 }
-.d-flex .card{
-	margin-right : 20px;
+
+.d-flex .card {
+	margin-right: 20px;
 }
 </style>
 
@@ -54,29 +55,32 @@
 				<!-- 중앙 정렬을 위해서 d-flex justify-content-center는 지우면 안됩니다 !! -->
 				<nav class="navbar d-flex justify-content-center"
 					style="background-color: #e3f2fd; margin-bottom: 5px;">
-
 					<h2>요기는 알아서 바꾸세여</h2>
 				</nav>
 
 			</div>
 			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<a href="productView.product"><img src="http://ktsmemo.cdn3.cafe24.com/p/0199.jpg"></a>
-					</div>
-					<div class="swiper-slide">
-						<a href="productView.product"><img src="http://ktsmemo.cdn3.cafe24.com/p/0199.jpg"></a>
-					</div>
-					
-					<div class="swiper-slide" style="font-size: 50pt;">- 끝 -</div>
-				</div>
-				<!-- 네비게이션 -->
+				<c:if test="${ProductCategory.pc_num }">
+					<c:if test="${BrandCategory.brand_num }">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="productView.product"><img
+									src="${Product.mainImage}"></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="productView.product"><img
+									src="${Product.mainImage}"></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="productView.product"><img
+									src="${Product.mainImage}"></a>
+							</div>
+							<div class="swiper-slide" style="font-size: 50pt;">- 끝 -</div>
+						</div>
+					</c:if>
+				</c:if>
 				<div class="swiper-button-next"></div>
-				<!-- 다음 버튼 (오른쪽에 있는 버튼) -->
 				<div class="swiper-button-prev"></div>
-				<!-- 이전 버튼 -->
-
-				<!-- 페이징 -->
 				<div class="swiper-pagination"></div>
 			</div>
 
@@ -128,52 +132,43 @@
 
 			<div id="bd">
 				<div id="gm-main" style="text-align: center">
-					<div class="gm-b">
+					<div class="gm-b" class="gm-b" style="padding-left: 250px;">
 						<div class="gm-gb">
 							<div class="gm-u first">
 								<div class="d-flex p-2">
 									<div class="card" style="width: 18rem;">
-										<a href="productView.product"><img src="images/1.jpg" class="card-img-top" alt="..."></a>
+										<a href="productView.product"><img
+											src="resources/images/1.jpg" class="card-img-top" alt="..."></a>
 										<div class="card-body">
 											<p class="card-text">1</p>
 										</div>
 									</div>
 									<div class="card" style="width: 18rem;">
-										<a href="productView.product"><img src="images/1.jpg" class="card-img-top" alt="..."></a>
+										<a href="productView.product"><img
+											src="resources/images/1.jpg" class="card-img-top" alt="..."></a>
 										<div class="card-body">
 											<p class="card-text">2</p>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="gm-u second">
-								<div class="d-flex p-2">
 									<div class="card" style="width: 18rem;">
-										<a href="productView.product"><img src="images/1.jpg" class="card-img-top" alt="..."></a>
+										<a href="productView.product"><img
+											src="resources/images/1.jpg" class="card-img-top" alt="..."></a>
 										<div class="card-body">
-											<p class="card-text">1</p>
+											<p class="card-text">3</p>
 										</div>
 									</div>
 									<div class="card" style="width: 18rem;">
-										<a href="productView.product"><img src="images/1.jpg" class="card-img-top" alt="..."></a>
+										<a href="productView.product"><img
+											src="resources/images/1.jpg" class="card-img-top" alt="..."></a>
 										<div class="card-body">
-											<p class="card-text">2</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="gm-u thrid">
-								<div class="d-flex p-2">
-									<div class="card" style="width: 18rem;">
-										<a href="productView.product"><img src="images/1.jpg" class="card-img-top" alt="..."></a>
-										<div class="card-body">
-											<p class="card-text">1</p>
+											<p class="card-text">4</p>
 										</div>
 									</div>
 									<div class="card" style="width: 18rem;">
-										<a href="productView.product"><img src="images/1.jpg" class="card-img-top" alt="..."></a>
+										<a href="productView.product"><img
+											src="resources/images/1.jpg" class="card-img-top" alt="..."></a>
 										<div class="card-body">
-											<p class="card-text">2</p>
+											<p class="card-text">5</p>
 										</div>
 									</div>
 								</div>
