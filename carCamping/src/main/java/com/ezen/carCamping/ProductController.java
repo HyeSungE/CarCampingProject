@@ -10,11 +10,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.ezen.carCamping.dto.ProductCategoryDTO;
+import com.ezen.carCamping.service.ProductMapper;
 
 @Controller
 public class ProductController {
 	@Autowired
-	private SqlSession sqlSession;
+	private ProductMapper productMapper;
 	  
 	@RequestMapping("/goProduct.product")
 	public String goProduct() {
@@ -22,7 +23,12 @@ public class ProductController {
 	}
 	
 	@RequestMapping("/productView.product")
+<<<<<<< HEAD
 	public String productView(HttpServletRequest req) {
+=======
+	public String productView() {
+		List<ProductCategoryDTO> plist= SqlSession.listProduct();
+>>>>>>> 69b97fa43f4848e582057c905fa6381b3dcdde61
 		return "product/productView";
 	}//여기에 ListBoardCommand에 있는 함수 불러오긴
 	
