@@ -2,22 +2,6 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="../top.jsp"%>
 <%@ include file="left.jsp"%>
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-	crossorigin="anonymous"></script>
-<!-- CSS only -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-	crossorigin="anonymous">
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-<link rel="stylesheet"
-	href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
 <div class="col-md-8 themed-grid-col">
 	<div class="row" align="center">
 		<div class="row">
@@ -37,7 +21,7 @@
 			<!-- 드랍 버튼 -->
 			<div class="col" align="left">
 				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button"
+					<button class="btn btn-outline-success" dropdown-toggle" type="button"
 						id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
 						카테고리 선택</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -50,7 +34,7 @@
 
 			<!-- 모달 버튼 -->
 			<div class="col" align="right">
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+				<button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
 					data-bs-target="#staticBackdrop">카테고리 등록</button>
 			</div>
 			<!-- 모달 버튼 끝 -->
@@ -92,9 +76,9 @@
 
 						<!-- 버튼 영역 -->
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary"
+							<button type="button" class="btn btn-outline-success"
 								data-bs-dismiss="modal">닫기</button>
-							<button type="button" class="btn btn-primary">등록</button>
+							<button type="button" class="btn btn-outline-success">등록</button>
 						</div>
 					</div>
 				</div>
@@ -113,28 +97,28 @@
 		<tr>
 			<td>차박용품</td>
 			<td>도킹텐트</td>
-			<td><button type="button" class="btn btn-primary"
+			<td><button type="button" class="btn btn-success"
 					data-bs-toggle="modal" data-bs-target="#staticBackdrop-111">
 					삭제</button></td>
 		</tr>
 		<tr>
 			<td>차박용품</td>
 			<td>에어메트</td>
-			<td><button type="button" class="btn btn-primary"
+			<td><button type="button" class="btn btn-success"
 					data-bs-toggle="modal" data-bs-target="#staticBackdrop-111">
 					삭제</button></td>
 		</tr>
 		<tr>
 			<td>브랜드</td>
 			<td>디오프</td>
-			<td><button type="button" class="btn btn-primary"
+			<td><button type="button" class="btn btn-success"
 					data-bs-toggle="modal" data-bs-target="#staticBackdrop-111">
 					삭제</button></td>
 		</tr>
 		<tr>
 			<td>브랜드</td>
 			<td>아드리아 모빌</td>
-			<td><button type="button" class="btn btn-primary"
+			<td><button type="button" class="btn btn-success"
 					data-bs-toggle="modal" data-bs-target="#staticBackdrop-111">
 					삭제</button></td>
 		</tr>
@@ -153,9 +137,9 @@
 				</div>
 				<div class="modal-body">정말 삭제하시겠습니까?</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary"
+					<button type="button" class="btn btn-outline-success"
 						data-bs-dismiss="modal">닫기</button>
-					<button type="button" class="btn btn-primary">삭제</button>
+					<button type="button" class="btn btn-outline-success">삭제</button>
 				</div>
 			</div>
 		</div>
