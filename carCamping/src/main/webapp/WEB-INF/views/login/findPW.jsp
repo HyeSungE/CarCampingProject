@@ -15,7 +15,7 @@
   		<!-- Font Awesome -->
   		<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
   		<!-- Style -->
-  		<link href='css/contectUs.css' rel='stylesheet' type='text/css'>
+  		<link href='css/contactUs.css' rel='stylesheet' type='text/css'>
  		<style>
  			textarea {
     			resize: none;
@@ -31,25 +31,28 @@
   		<div class="section">
   			<div class="container">
   				<div class="row">
-  					<div class="col-md-12 text-center">
-  						<h2 class="section-title">Contact Us</h2>
-  						<p class="section-description">문의사항을 보내주시면 메일로 전달 드립니다(수정예정)</p>
+  					<div class="col-md-9 text-center">
+  						<h2 class="section-title">임시 비밀번호 발급</h2>
+  						<p class="section-description">가입하신 아이디+이메일을 통해 이메일로 임시 비밀번호를 보내드립니다. 
+  						<br>로그인 후 반드시 비밀번호를 변경하시기 바랍니다.</p>
   					</div>
-  					<div class="col-md-8 col-md-offset-2">
+  					<div class="col-md-8 col-md-offset-3">
   						<form id="contact" method="post" class="form" role="form">
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<input class="form-control" id="name" name="name" placeholder="닉네임" type="text" required />
+									<input class="form-control" id="id" name="id" placeholder="ID" type="text" required />
 								</div>
+								</div>
+								<div class="row">
 								<div class="col-md-6 form-group">
 									<input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
 								</div>
 							</div>
-							<textarea class="form-control" id="message" name="message" placeholder="문의사항" rows="5"></textarea>
 							<br />
 							<div class="row">
 								<div class="col-md-12 form-group">
-									<button class="btn btn-success mb-3" type="submit" style="width: 756px;">Submit</button>
+									<button class="btn btn-success mb-3" type="submit" style="width: 150px;">비밀번호 발급</button>
+									<button class="btn btn-success mb-3" type="submit" style="width: 150px;">로그인</button>
 								</div>
 							</div>
 						</form>

@@ -19,5 +19,6 @@ public class ProductController {
 	@RequestMapping("/productReviewView.product")
 	public String productReviewView() {
 		return "product/productReviewView";
+	
 	}
 }
