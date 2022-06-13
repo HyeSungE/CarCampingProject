@@ -182,7 +182,7 @@
 					</div>
 
 
-					<div id="hd">
+					<!-- <div id="hd">
 						<div class="card text-center">
 							<div class="card-header">배너</div>
 							<div class="card-body">
@@ -193,7 +193,7 @@
 							</div>
 							<div class="card-footer text-muted">2 days ago</div>
 						</div>
-					</div>
+					</div> -->
 
 				</div>
 			</div>

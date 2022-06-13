@@ -43,6 +43,13 @@
 <link rel="stylesheet" href="resources/css/owl.css">
 <link rel="stylesheet" href="resources/css/lightbox.css">
 <link rel="stylesheet" href="resources/css/map_region.css">
+
+<!--바케성 0613 배너 css js-->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+
+
 </head>
 
 <body>
@@ -64,7 +71,7 @@
 							<li><a href="login.jsp">회원가입</a></li>
 							<li class="has-sub"><a href="javascript:void(0)">바로가기</a>
 								<ul class="sub-menu" style="background: #e9efc08c;">
-									<li><a href="차박지 리뷰"  style="background: #E9EFC0;">차박지 리뷰</a></li>
+									<li><a href="차박지 리뷰"  style="background: #E9EFC0;">차박지 메인</a></li>
 									<li><a href="용품대여"  style="background: #E9EFC0;">용품 대여</a></li>
 								</ul></li>
 							<li><a href="login.jsp">리뷰쓰기</a></li>
