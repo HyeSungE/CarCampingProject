@@ -91,27 +91,27 @@
 										닉네임/프로필사진
 									</div>
 									<div class="list-group">
-										<a href="mypage_profile.jsp"
+										<a href="myPageProfile.myPage"
 											class="list-group-item list-group-item-action list-group-item-light p-3">		
 											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											내 정보 </a> 
-										<a href="#"
+										<a href="myPageWriteReview.myPage"
 											class="list-group-item list-group-item-action list-group-item-light p-3">
 											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											내가 쓴 리뷰</a> 
-										<a href="#"
+										<a href="myPageLikeReview.myPage"
 											class="list-group-item list-group-item-action list-group-item-light p-3">
 											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											내가 좋아한 리뷰</a> 
-										<a href="cart.jsp"
+										<a href="myPageCart.myPage"
 											class="list-group-item list-group-item-action list-group-item-light p-3">
 											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											장바구니</a> 
-										<a href="#"
+										<a href="myPageRental.myPage"
 											class="list-group-item list-group-item-action list-group-item-light p-3">
 											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											대여내역</a>
-										<a href="mypage_list.jsp"
+										<a href="myPageContactUs.myPage"
 											class="list-group-item list-group-item-action list-group-item-light p-3">
 											<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
 											문의하기</a>	 

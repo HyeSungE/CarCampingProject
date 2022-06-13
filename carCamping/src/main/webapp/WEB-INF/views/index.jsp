@@ -76,7 +76,7 @@ img, svg {
 									
 									<ul class="sub-menu">
 										<li><a href="로그아웃페이지로">로그아웃</a></li>
-										<li><a href="myPageCart.myPage">마이페이지</a></li>
+										<li><a href="myPageProfile.myPage">마이페이지</a></li>
 									</ul>
 								</li> 
 							</ul>
