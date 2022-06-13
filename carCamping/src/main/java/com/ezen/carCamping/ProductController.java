@@ -13,7 +13,7 @@ import com.ezen.carCamping.service.ProductMapper;
 @Controller
 public class ProductController {
 	@Autowired
-	private ProductMapper productMapper;
+	private SqlSession sqlSession;
 	  
 	@RequestMapping("/goProduct.product")
 	public String goProduct() {
@@ -22,12 +22,14 @@ public class ProductController {
 	
 	@RequestMapping("/productView.product")
 	public String productView() {
-		List<ProductCategoryDTO> plist= SqlSession.listProduct();
+		List<ProductCategoryDTO> plist=sqlSession.selectList("listProduct");
 		return "product/productView";
 	}
-	
+	 
 	@RequestMapping("/productReviewView.product")
 	public String productReviewView() {
 		return "product/productReviewView";
 	}
+	
+	
 }
