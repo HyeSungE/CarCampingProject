@@ -106,9 +106,8 @@
 														marker,
 														'click',
 														function() {
-															location.href = "test?region_code="
-																	+ (i + 1);//controller       
-
+															location.href ="goRegion.region?region_num="+ (i + 1);
+															//해당지역 인기글 변경      
 														});
 									}
 								</script>
@@ -121,41 +120,36 @@
 
 								<li class="list-group-item fs-2 text-center"><button
 										class="btn btn-outline-warning btn-lg" type="button" disabled
-										style="-bs-btn-padding-x: 70px; - -bs-btn-padding-y: 15px;"
-									>
-										인 기 글 <i class="bi bi-trophy-fill" width="40" height="40"
+										style="-bs-btn-padding-x: 70px; - -bs-btn-padding-y: 15px;">
+										${dto.region_num}인 기 글 <i class="bi bi-trophy-fill" width="40" height="40"
 											fill="currentColor"></i>
 									</button>
 								<li class="list-group-item position-relative"><img
 									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
 									style="width: 107px; height: 107px;">
 									<div class="position-absolute top-50 start-50 translate-middle">
-									<a href="regionView.region">I'm
-										a flexbox container!</a>
-									</div></li>>
-
-								<li class="list-group-item position-relative"><img
-									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
-									style="width: 107px; height: 107px;">
-									<div class="position-absolute top-50 start-50 translate-middle">
-									<a href="regionView.region">I'm
-										a flexbox container!</a>
+									<a href="regionView.region">해당지역인기글</a>
 									</div></li>
 
 								<li class="list-group-item position-relative"><img
 									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
 									style="width: 107px; height: 107px;">
 									<div class="position-absolute top-50 start-50 translate-middle">
-									<a href="regionView.region">I'm
-										a flexbox container!</a>
+									<a href="regionView.region">해당지역인기글</a>
 									</div></li>
 
 								<li class="list-group-item position-relative"><img
 									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
 									style="width: 107px; height: 107px;">
 									<div class="position-absolute top-50 start-50 translate-middle">
-									<a href="regionView.region">I'm
-										a flexbox container!</a>
+									<a href="regionView.region">해당지역인기글</a>
+									</div></li>
+
+								<li class="list-group-item position-relative"><img
+									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
+									style="width: 107px; height: 107px;">
+									<div class="position-absolute top-50 start-50 translate-middle">
+									<a href="regionView.region">해당지역인기글</a>
 									</div></li>
 							</ul>
 
@@ -257,7 +251,7 @@
 		</div>
 	</div>
 </div>
-</div>
+
 
 <script>
 	
