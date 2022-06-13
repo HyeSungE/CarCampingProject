@@ -106,7 +106,7 @@
 														marker,
 														'click',
 														function() {
-															location.href ="goRegion.region?region_num="+ (i + 1);
+															location.href ="goRegionHOT.region?region_num="+ (i + 1);
 															//해당지역 인기글 변경      
 														});
 									}
@@ -121,7 +121,7 @@
 								<li class="list-group-item fs-2 text-center"><button
 										class="btn btn-outline-warning btn-lg" type="button" disabled
 										style="-bs-btn-padding-x: 70px; - -bs-btn-padding-y: 15px;">
-										${dto.region_num}인 기 글 <i class="bi bi-trophy-fill" width="40" height="40"
+										${regionDTO.region_name} 인 기 글 <i class="bi bi-trophy-fill" width="40" height="40"
 											fill="currentColor"></i>
 									</button>
 								<li class="list-group-item position-relative"><img

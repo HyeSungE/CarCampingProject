@@ -14,18 +14,35 @@ import com.ezen.carCamping.service.RegionMapper;
 @Controller
 public class RegionController {
 	@Autowired
+	
 	private RegionMapper RegionMapper;
 	
-	@RequestMapping(value="goRegion.region", method=RequestMethod.GET)
+	@RequestMapping("/goRegion.region")
 	public String goRegion() {
 		return "region/regionMain";
 	}
-	@RequestMapping(value="goRegion.region", method=RequestMethod.POST)
-	public String goRegion(HttpServletRequest req,@RequestParam int region_num) {
-		RegionDTO dto = RegionMapper.selectRegion(region_num);
-		req.setAttribute("region", dto);
+	
+	@RequestMapping("/goRegionHOT.region")
+	public String goRegionHOT(HttpServletRequest req) {
+		RegionDTO dto = RegionMapper.selectRegion(Integer.parseInt(req.getParameter("region_num")));
+		req.setAttribute("regionDTO",dto);
 		return "region/regionMain";
 	}
+	
+	/*
+	 * @RequestMapping(value="goRegion.region", method=RequestMethod.POST) public
+	 * String goRegion(HttpServletRequest req,@RequestParam int region_num) {
+	 * //String num = (String)req.getAttribute("region_num");
+	 * req.setAttribute("region_num", region_num); return "region/regionMain"; }
+	 */
+	
+	/*
+	 * @RequestMapping(value="goRegion.region", method=RequestMethod.POST) public
+	 * String goRegion(HttpServletRequest req) {
+	 * 
+	 * RegionDTO dto = RegionMapper.selectRegion(Integer.parseInt(num));
+	 * req.setAttribute("dto", dto); return "region/regionMain"; }
+	 */
 	@RequestMapping("/regionReviewView.region")
 	public String regionReviewView() {
 		return "/region/regionReviewView";

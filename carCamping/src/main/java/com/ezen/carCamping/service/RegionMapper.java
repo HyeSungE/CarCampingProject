@@ -19,6 +19,7 @@ public class RegionMapper {
 	}
 	public RegionDTO selectRegion(int region_num) {
 		RegionDTO dto = sqlSession.selectOne("selectRegion", region_num);
+		System.out.println("Asd");
 		return dto;
 	}
 }
