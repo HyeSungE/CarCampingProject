@@ -8,16 +8,19 @@ public class MyPageController {
 
 	@RequestMapping("/myPageCart.myPage")
 	public String myPageCart() {
+		System.out.println();
 		return "myPage/myPageCart";
 	}
 	
 	@RequestMapping("/myPageContactUs.myPage")
 	public String myPageContactUs() {
+		System.out.println();
 		return "myPage/myPageContactUs";
 	}
 	
 	@RequestMapping("/myPageProfile.myPage")
 	public String myPageProfile() {
+		System.out.println();
 		return "myPage/myPageProfile";
 	}
 	@RequestMapping("/myPageQuestion.myPage")
@@ -27,6 +30,7 @@ public class MyPageController {
 	
 	@RequestMapping("/myPageRental.myPage")
 	public String myPageRental() {
+		System.out.println();
 		return "myPage/myPageRental";
 	}
 	
