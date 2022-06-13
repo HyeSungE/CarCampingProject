@@ -1,6 +1,10 @@
 package com.ezen.carCamping.dto;
 
 public class BrandCategoryDTO {
+<<<<<<< HEAD
+=======
+
+>>>>>>> cbed9ea1c50c62715890e8a709d153506f7e682c
 	private int pc_num;
 	private String pc_name;
 	public int getPc_num() {
@@ -31,4 +35,8 @@ public class BrandCategoryDTO {
 	public void setBrand_name(String brand_name) {
 		this.brand_name = brand_name;
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> cbed9ea1c50c62715890e8a709d153506f7e682c
 }
