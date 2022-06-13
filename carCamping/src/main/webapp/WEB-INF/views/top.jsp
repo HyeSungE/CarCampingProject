@@ -67,7 +67,11 @@
 									<li><a href="goRegion.region"  style="background: #E9EFC0;">차박지 </a></li>
 									<li><a href="goProduct.product"  style="background: #E9EFC0;">용품 대여</a></li>
 								</ul></li>
-							<li><a href="field_review.review">리뷰쓰기</a></li>
+							<li class="has-sub"><a href="javascript:void(0)">리뷰쓰기</a>
+							<ul class="sub-menu" style="background: #e9efc08c;">
+									<li><a href="field_review.review"  style="background: #E9EFC0;">장소 리뷰 </a></li>
+									<li><a href="goods_review.review"  style="background: #E9EFC0;">용품 리뷰</a></li>
+								</ul></li>
 							<li class="scroll-to-section">
 								<a class="btn btn-outline-success" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="padding-top:0px; padding-bottom:0px;">
 									프로필

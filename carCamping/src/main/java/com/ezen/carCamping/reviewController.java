@@ -11,4 +11,9 @@ public class reviewController {
 	public String field_review() {
 		return "review/field_review";
 	}
+	
+	@RequestMapping("/goods_review.review")
+	public String godds_review() {
+		return "review/goods_review";
+	}
 }
