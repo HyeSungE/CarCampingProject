@@ -4,9 +4,13 @@
 <link rel="stylesheet" href="assets/css/map_region.css">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 70bf619b5fa801e8d76176abc8f175b3deccfa2b
+=======
+
+>>>>>>> 6b797774a5c1d23371a1323a45e5f9e34d6ad753
 <!-- <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -23,9 +27,13 @@
 	href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 70bf619b5fa801e8d76176abc8f175b3deccfa2b
+=======
+
+>>>>>>> 6b797774a5c1d23371a1323a45e5f9e34d6ad753
 <!-- 	 <script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -42,7 +50,7 @@
 	<link rel="stylesheet"
 		href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
->>>>>>> 3bf796b5189c117f78aa5bb184256aab0671a2e9
+
 
 <script>
 			function popup() {

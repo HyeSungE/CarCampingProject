@@ -50,6 +50,7 @@
 <link rel="stylesheet" href="resources/css/map_region.css">
 
 <!--바케성 0613 배너 css js-->
+
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 				
