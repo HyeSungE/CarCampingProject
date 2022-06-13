@@ -22,7 +22,7 @@
                 <p></p>
                 <div class="col-md-12">
                     <small>
-                    <a href="#"><h3>회원가입</h3></a>
+                    <a href="#"><font color="green"><h3>회원가입</h3></font></a>
                     </small>
                 </div>
             </div>
@@ -337,14 +337,39 @@ e-mail : dd@naver.com
                         </div>
                     </div>
                 </div>
+                <div class="form-group" id="divmem_Id">
+                    <label for="inputmem_Id" class="col-lg-2 control-label">아이디</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control onlyHangul" id="mem_id" data-rule-required="true" placeholder="30자이내의 알파벳, 언더스코어(_), 숫자만 입력 가능합니다." maxlength="15">
+                    </div>
+                </div><div class="form-group" id="divmem_email">
+                    <label for="inputmem_email" class="col-lg-2 control-label">이메일</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control onlyHangul" id="mem_email" data-rule-required="true" placeholder="이메일을 입력해주세요." maxlength="15">
+                    </div>
+                </div>
+                <div class="form-group" id="divmem_password">
+                    <label for="inputmem_password" class="col-lg-2 control-label">비밀번호</label>
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" id="mem_password" data-rule-required="true" placeholder="영,문,특수기호 조합 8가지 이상" maxlength="15">
+                    </div>
+                </div>
+                
+                <div class="form-group" id="divmem_Passwordcheck">
+                    <label for="inputmem_Passwordcheck" class="col-lg-2 control-label">비밀번호 확인</label>
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" id="mem_passwordCheck" data-rule-required="true" placeholder="비밀번호 확인" maxlength="40">
+                    </div>
+                </div>
+                
                 <div class="form-group" id="divmem_userName">
                     <label for="inputmem_userName" class="col-lg-2 control-label">이름</label>
                     <div class="col-lg-10">
                         <input type="text" class="form-control onlyAlphabetAndNumber" id="mem_userName" data-rule-required="true" placeholder="한글만 입력 가능합니다." maxlength="30">
                     </div>
                 </div>
-                <div class="form-group" id="divmem_Nickname">
-                    <label for="inputmem_Nickname" class="col-lg-2 control-label">닉네임</label>
+                <div class="form-group" id="divmem_nickname">
+                    <label for="inputmem_nickname" class="col-lg-2 control-label">닉네임</label>
                     <div class="col-lg-10">
                         <input type="text" class="form-control" id="mem_nickname" name="excludeHangul" data-rule-required="true" placeholder="닉네임" maxlength="30">
                     </div>
@@ -353,12 +378,6 @@ e-mail : dd@naver.com
                     <label for="inputmem_image" class="col-lg-2 control-label">프로필 사진</label>
                     <div class="col-lg-10">
                         <input type="file" class="form-control" id="mem_userName" data-rule-required="true" maxlength="30">
-                    </div>
-                </div>
-                <div class="form-group" id="divmem_Id">
-                    <label for="inputmem_Id" class="col-lg-2 control-label">아이디</label>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control onlyHangul" id="mem_id" data-rule-required="true" placeholder="30자이내의 알파벳, 언더스코어(_), 숫자만 입력 가능합니다." maxlength="15">
                     </div>
                 </div>
                 
@@ -373,6 +392,13 @@ e-mail : dd@naver.com
                     <label for="inputmem_Passwordcheck" class="col-lg-2 control-label">비밀번호 확인</label>
                     <div class="col-lg-10">
                         <input type="password" class="form-control" id="mem_passwordCheck" data-rule-required="true" placeholder="비밀번호 확인" maxlength="40">
+                    </div>
+                </div>
+                
+                <div class="form-group" id="divmem_phone">
+                    <label for="inputmem_phone" class="col-lg-2 control-label">전화번호</label>
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" id="mem_phone" data-rule-required="true" placeholder="-를 제외하고 숫자만 입력하세요." maxlength="15">
                     </div>
                 </div>
                 <div class="form-group" id="divmem_birthday">
@@ -414,7 +440,7 @@ e-mail : dd@naver.com
                 </div>
                 <div class="form-group">
                     <div class="col-lg-offset-2 col-lg-10">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-success">Sign in</button>
                     </div>
                 </div>
             </form>

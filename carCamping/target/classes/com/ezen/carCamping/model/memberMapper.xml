@@ -2,6 +2,7 @@
 <!DOCTYPE mapper
  	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<<<<<<< HEAD
  	
  <mapper namespace="com.ezen.carCamping.model.memberMapper">
  	<select id="getMember" parameterType="int" resultType="memberDTO">
@@ -17,3 +18,10 @@
 		select * from jsp_member where mem_id=#{mem_id}
 	</select>
  	</mapper>
+=======
+<mapper namespace="con.ezen.carCamping.model.memberMapper">
+	<insert id="insertMember" parameterType="MemberDTO">
+		insert into member values(?,#{mem_id},#{mem_email},#{mem_password},#{mem_userName},#{mem_nickName},#{mem_phone},#{mem_birthday},#{mem_gender},#{region_num})
+	</insert>
+</mapper>
+>>>>>>> 2db792d2cce64969a4f2de6b3a95daa674cf0541
