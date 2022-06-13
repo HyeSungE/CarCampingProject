@@ -20,9 +20,9 @@
   
     <script src="resources/js/jquery.min.js"></script>
     
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="resources/js/bootstrap.bundle.min.js"></script>
-
+  <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
+  <!--   <script src="resources/js/bootstrap.bundle.min.js"></script>
+ -->
     <script src="resources/js/isotope.min.js"></script>
     <script src="resources/js/owl-carousel.js"></script>
     <script src="resources/js/lightbox.js"></script>
