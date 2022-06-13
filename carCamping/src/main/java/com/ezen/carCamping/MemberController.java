@@ -1,6 +1,5 @@
 package com.ezen.carCamping;
 
-<<<<<<< HEAD
 import java.util.Map;
 
 import javax.servlet.http.Cookie;
@@ -15,27 +14,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.ezen.carCamping.dto.MemberDTO;
 import com.ezen.carCamping.service.MemberMapper;
-=======
-import org.springframework.stereotype.Controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
->>>>>>> 2db792d2cce64969a4f2de6b3a95daa674cf0541
+
 
 @Controller
 public class MemberController {
 	
-<<<<<<< HEAD
 	@Autowired
 	private MemberMapper memberMapper;
 	
-=======
->>>>>>> 2db792d2cce64969a4f2de6b3a95daa674cf0541
 	@RequestMapping("/login.login")
 	public String login() {
 		return "login/login";
 	}
-	
-<<<<<<< HEAD
+
 	@RequestMapping("/findID.login")
 	public String searchMemberID() {
 		return "login/findID";
@@ -96,20 +88,11 @@ public class MemberController {
 		req.setAttribute("msg", msg);
 		req.setAttribute("url", url);
 		return "message";
-=======
+	}
+	
 	@RequestMapping("/sign.login")
 	public String sign() {
-		return "login/sign";
+	return "login/sign";
     }
-	
-	@RequestMapping("/findID.login")
-	public String findID() {
-		return "login/findID";
-	 }
-	
-		@RequestMapping("/findPW.login")
-		public String findPW() {
-			return "login/findPW";
->>>>>>> 2db792d2cce64969a4f2de6b3a95daa674cf0541
-}
+
 }
