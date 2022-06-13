@@ -3,6 +3,10 @@
 	pageEncoding="UTF-8"%>
 <link rel="stylesheet" href="assets/css/map_region.css">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 70bf619b5fa801e8d76176abc8f175b3deccfa2b
 <!-- <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -18,6 +22,10 @@
 <link rel="stylesheet"
 	href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 70bf619b5fa801e8d76176abc8f175b3deccfa2b
 <!-- 	 <script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -34,6 +42,7 @@
 	<link rel="stylesheet"
 		href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+>>>>>>> 3bf796b5189c117f78aa5bb184256aab0671a2e9
 
 <script>
 			function popup() {
@@ -62,7 +71,9 @@
 									var options = {
 										center : new kakao.maps.LatLng(36, 128),
 										level : 13,
-										draggable : false
+										draggable : false,
+										disableDoubleClick : true,
+										disableDoubleClickZoom : true
 									};
 									var map = new kakao.maps.Map(container,
 											options);
@@ -101,7 +112,7 @@
 										var markerPosition = new kakao.maps.LatLng(
 												PositionArr[i].x,
 												PositionArr[i].y);
-										var imageSrc ="mapMarkerImage/"+(i+1)+".png"
+										var imageSrc ="resources/images/mapMarkerImage/"+(i+1)+".png"
 										var markerImage = new kakao.maps.MarkerImage(
 												imageSrc, imageSize, imageOption);
 
@@ -120,9 +131,8 @@
 														marker,
 														'click',
 														function() {
-															location.href = "test?region_code="
-																	+ (i + 1);//controller       
-
+															location.href ="goRegionHOT.region?region_num="+ (i + 1);
+															//해당지역 인기글 변경      
 														});
 									}
 								</script>
@@ -135,42 +145,36 @@
 
 								<li class="list-group-item fs-2 text-center"><button
 										class="btn btn-outline-warning btn-lg" type="button" disabled
-										style="-bs-btn-padding-x: 70px; - -bs-btn-padding-y: 15px;"
-										
-									>
-										인 기 글 <i class="bi bi-trophy-fill" width="40" height="40"
+										style="-bs-btn-padding-x: 70px; - -bs-btn-padding-y: 15px;">
+										${regionDTO.region_name} 인 기 글 <i class="bi bi-trophy-fill" width="40" height="40"
 											fill="currentColor"></i>
 									</button>
 								<li class="list-group-item position-relative"><img
-									src="sik.jpg" class="img-responsive rounded-circle"
-									style="width: 107px; height: 107px;">
-									<div
-										class="position-absolute top-50 start-50 translate-middle ">
-										<a href="regionView.region">I'm
-										a flexbox container!</a></div></li>
-
-								<li class="list-group-item position-relative"><img
-									src="sik.jpg" class="img-responsive rounded-circle"
+									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
 									style="width: 107px; height: 107px;">
 									<div class="position-absolute top-50 start-50 translate-middle">
-									<a href="regionView.region">I'm
-										a flexbox container!</a>
+									<a href="regionView.region">해당지역인기글</a>
 									</div></li>
 
 								<li class="list-group-item position-relative"><img
-									src="sik.jpg" class="img-responsive rounded-circle"
+									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
 									style="width: 107px; height: 107px;">
 									<div class="position-absolute top-50 start-50 translate-middle">
-									<a href="regionView.region">I'm
-										a flexbox container!</a>
+									<a href="regionView.region">해당지역인기글</a>
 									</div></li>
 
 								<li class="list-group-item position-relative"><img
-									src="sik.jpg" class="img-responsive rounded-circle"
+									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
 									style="width: 107px; height: 107px;">
 									<div class="position-absolute top-50 start-50 translate-middle">
-									<a href="regionView.region">I'm
-										a flexbox container!</a>
+									<a href="regionView.region">해당지역인기글</a>
+									</div></li>
+
+								<li class="list-group-item position-relative"><img
+									src="resources/images/sik.jpg" class="img-responsive rounded-circle"
+									style="width: 107px; height: 107px;">
+									<div class="position-absolute top-50 start-50 translate-middle">
+									<a href="regionView.region">해당지역인기글</a>
 									</div></li>
 							</ul>
 
@@ -272,7 +276,7 @@
 		</div>
 	</div>
 </div>
-</div>
+
 
 <script>
 	

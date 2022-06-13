@@ -1,7 +1,8 @@
 package com.ezen.carCamping.dto;
 
 public class MemberDTO {
-	private int mem_id;
+	private int mem_num;
+	private String mem_id;
 	private String mem_email;
 	private String mem_password;
 	private String mem_userName;
@@ -9,7 +10,7 @@ public class MemberDTO {
 	private String mem_phone;
 	private String mem_birthday;
 	private String mem_gender;
-	private int region_num;
+	private RegionDTO regionDTO;
 	private int mem_point;
 	private int mem_rentalCount;
 	private String mem_sysdate;
@@ -21,10 +22,18 @@ public class MemberDTO {
 	private String mem_summary;
 	private String mem_introduce;
 	private int mem_firstReview;
-	public int getMem_id() {
+	
+	
+	public int getMem_num() {
+		return mem_num;
+	}
+	public void setMem_num(int mem_num) {
+		this.mem_num = mem_num;
+	}
+	public String getMem_id() {
 		return mem_id;
 	}
-	public void setMem_id(int mem_id) {
+	public void setMem_id(String mem_id) {
 		this.mem_id = mem_id;
 	}
 	public String getMem_email() {
@@ -69,11 +78,11 @@ public class MemberDTO {
 	public void setMem_gender(String mem_gender) {
 		this.mem_gender = mem_gender;
 	}
-	public int getRegion_num() {
-		return region_num;
+	public RegionDTO getregionDTO() {
+		return regionDTO;
 	}
-	public void setRegion_num(int region_num) {
-		this.region_num = region_num;
+	public void setregionDTO(RegionDTO regionDTO) {
+		this.regionDTO = regionDTO;
 	}
 	public int getMem_point() {
 		return mem_point;

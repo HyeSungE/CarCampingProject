@@ -161,7 +161,22 @@
 										<a href="productView.product"><img
 											src="resources/images/1.jpg" class="card-img-top" alt="..."></a>
 										<div class="card-body">
+<<<<<<< HEAD
 											<p class="card-text">4</p>
+=======
+											<p class="card-text">2</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="gm-u thrid">
+								<div class="d-flex p-2">
+									<div class="card" style="width: 18rem;">
+										<a href="productView.product"><img src="images/1.jpg" class="card-img-top" alt="..."></a>
+										<div class="card-body">
+											<p class="card-text">1</p>
+>>>>>>> 70bf619b5fa801e8d76176abc8f175b3deccfa2b
 										</div>
 									</div>
 									<div class="card" style="width: 18rem;">
@@ -177,7 +192,7 @@
 					</div>
 
 
-					<div id="hd">
+					<!-- <div id="hd">
 						<div class="card text-center">
 							<div class="card-header">배너</div>
 							<div class="card-body">
@@ -188,7 +203,7 @@
 							</div>
 							<div class="card-footer text-muted">2 days ago</div>
 						</div>
-					</div>
+					</div> -->
 
 				</div>
 			</div>
